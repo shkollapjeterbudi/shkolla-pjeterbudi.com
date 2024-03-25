@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Kryesore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">Kategoritë</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kuic.html">Kuic</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="pyetesor.html">Pyetësor</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="registerfrom.html">Regjistrohu</a>
+                        </li> 
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Kërko" aria-label="Kërko">
+                            <button class="btn btn-outline-success" type="submit">Kërko</button>
+                        </form>
+                </div>
+            </div>
+        </nav>
+        
+    <div class="container">
+        <h2>Regjistrimi i përdoruesit</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="username">Emri:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Mbiemri:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Mosha:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Regjistrohu</button>
+            </div>
+        </form>
+        <div id="message"></div>
+    </div>
+</body>
+
+</html>
